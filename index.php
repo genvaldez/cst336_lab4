@@ -35,7 +35,7 @@
             } else{
              // Display Carousel goes here
              
-             for($i=0; $i < 5; $i++){
+             for($i=0; $i < 7; $i++){
                  do{
                      $randomIndex=rand(0,count($imageURLs));
                  }
@@ -49,7 +49,7 @@
             <!-- Indicators go here -->
             <ol class="carousel-indicators">
                 <?php
-                for($i=0; $i<5; $i++){
+                for($i=0; $i<7; $i++){
                     echo "<li data-target=#carousel-example-generic' data-slide-to='$i'";
                     echo ($i==0)?" class='active'":"";
                     echo "></li>";
@@ -60,7 +60,7 @@
             <!-- Wrapper for images -->
             <div class="carousel-inner" role="listbox">
                 <?php
-                    for($i=0; $i <5; $i++){
+                    for($i=0; $i <7; $i++){
                         do{
                             $randomIndex=rand(0,count($imageURLs));
                         }
